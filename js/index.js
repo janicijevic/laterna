@@ -28,6 +28,6 @@ function goToJelovnik(){
         location.href = loc.replace("index.html", "jelovnik.html")
     }
     else{
-        href += "jelovnik.html"
+        location.href += "jelovnik.html"
     }
 }
