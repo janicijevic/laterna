@@ -22,12 +22,5 @@ for (let i=0; i<links.length; i++){
 }
 
 function goToJelovnik(){
-    var loc = location.href;
-    var res = loc.match(/index\.html/);
-    if (res[0] == "index.html"){
-        location.href = loc.replace("index.html", "jelovnik.html")
-    }
-    else{
-        location.href += "jelovnik.html"
-    }
+    location.href += "jelovnik.html";
 }
