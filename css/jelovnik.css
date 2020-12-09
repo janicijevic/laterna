@@ -1,0 +1,158 @@
+:root{
+    --primary-color: #e5e5e5;
+    --secondary-color: #ea7000;
+    --black: #000000;
+    --desc-color: #535353;
+}
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family: "Roboto", sans-serif;   
+    letter-spacing: 1px;
+}
+
+.header{
+    max-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5% 0 5%;
+    padding: 3% 0;
+    position:relative;
+}
+.header::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--black);
+}
+
+.logo{
+    width: 20vh;
+    cursor: pointer;
+}
+.title{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 5vh;
+}
+.backToMain{
+    font-size:1.2rem;
+    font-weight: 600;
+    padding-top: 5vh;
+    padding-right: 2vh;
+    cursor: pointer;
+}
+
+.nav{
+    position: sticky;
+    top:0;
+    z-index: 9;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2% 5%;
+    margin: 0 5% 5% 5%;
+    background-color: var(--primary-color);
+}
+li{
+    list-style-type: none;
+    display: inline;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.nav a{ /* Navigation buttons */
+    outline: none;
+    color: var(--black);
+    text-decoration: none;
+    position: relative;
+    display:inline-block;
+}
+.nav a::after{
+    content:"";
+    background-color: var(--secondary-color);
+    height:2px;
+    width:0;
+    position: absolute;
+    transition: all 200ms;
+    left:50%;
+    bottom: -10px;
+    pointer-events: none
+}
+.nav a:hover::after{
+    left: 0;
+    width: 100%;
+}
+
+
+
+.content{
+    margin: 0 20%;
+}
+
+
+.section{
+    position: relative;
+    margin-bottom: 5%;
+}
+.section::before{
+    content: "";
+    position: absolute;
+    background-color: var(--secondary-color);
+    left:-2.2rem;
+    top: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.section::after{
+    content: "";
+    position: absolute;
+    background-color: var(--secondary-color);
+    left: -1.2rem;
+    top: 0;
+    height: 100%;
+    width: 0.2rem;
+}
+
+.sectionTitle{
+    font-size:1.2rem;
+    font-weight: 600;
+    padding-bottom: 2%;
+    position: relative;
+}
+
+.jelo{
+    padding-left: 5%;
+    margin-bottom: 2%;
+}
+
+.titleJela{
+    display: flex;
+    justify-content: space-between;
+}
+.imeJela{
+    font-weight: 500;  
+}
+.opisJela{
+    color: var(--desc-color);
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-right:17%;
+    font-weight: 400;
+    text-align: justify;
+}
+.cenaJela{
+    font-weight: 500;
+}
+
+
+
