@@ -15,6 +15,6 @@ function goToMain(){
     var loc = location.href;
     var res = loc.match(/jelovnik\.html/);
     if (res[0] == "jelovnik.html"){
-        location.href = loc.replace("jelovnik.html", "index.html")
+        location.href = loc.replace("jelovnik.html", "")
     }
 }
