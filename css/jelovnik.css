@@ -85,7 +85,7 @@ li{
     position: absolute;
     transition: all 200ms;
     left:50%;
-    bottom: -10px;
+    bottom: -5px;
     pointer-events: none
 }
 .nav a:hover::after{
@@ -102,13 +102,13 @@ li{
 
 .section{
     position: relative;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 .section::before{
     content: "";
     position: absolute;
     background-color: var(--secondary-color);
-    left:-2.2rem;
+    left:-2.5rem;
     top: 0;
     width: 1.2rem;
     height: 1.2rem;
@@ -117,7 +117,7 @@ li{
     content: "";
     position: absolute;
     background-color: var(--secondary-color);
-    left: -1.2rem;
+    left: -1.5rem;
     top: 0;
     height: 100%;
     width: 0.2rem;
@@ -126,7 +126,7 @@ li{
 .sectionTitle{
     font-size:1.2rem;
     font-weight: 600;
-    padding-bottom: 2%;
+    padding-bottom: 3%;
     position: relative;
 }
 
@@ -155,4 +155,40 @@ li{
 }
 
 
+@media only screen and (max-width: 900px) {
+
+    .logo{
+        width: 15vh;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .backToMain{
+        font-size: 1rem;
+    }
+
+
+    .nav li{
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .nav{
+        margin-bottom: 10%;
+    }
+
+    .content{
+        margin: 0 15%;
+    }
+
+    .sectionTitle{
+        padding-bottom: 7%;
+    }
+    .jelo{
+        margin-bottom: 7%;
+    }
+    .imeJela{
+        margin-bottom: 2%;
+    }
+
+}
 
